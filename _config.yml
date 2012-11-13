@@ -1,0 +1,13 @@
+permalink: /blog/:year/:month/:title
+auto: false
+pygments: true
+paginate: 10
+redirects: yes
+exclude: ['public', 'bin', 'vendor', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md', 'dotcloud.yml']
+destination: 'public'
+
+production_url: http://dave-bond.com
+title : Dave Bond
+author:
+  name: Dave Bond
+  email: dave@dave-bond.com
