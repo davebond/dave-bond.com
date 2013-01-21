@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h2>
+  Blog Archive
+</h2>
+
+<div id="archive">
+{% for post in site.posts %}
+  <a href="{{ post.url }}/">
+  <div style="float:left;width:70px;">
+    {{ post.date | date_to_string }}
+  </div>
+  &raquo;
+  {{ post.title }}
+  </a>
+   - 
+  <a href="http://www.dave-bond.com{{ post.url }}/#disqus_thread"></a>
+  <br />
+{% endfor %}
+</div>
