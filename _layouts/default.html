@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap-responsive.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css" />
   <link rel="stylesheet" href="/resources/style.css">
   <title>{{ page.title }} {% if page.title %} – {% endif %} {{ site.title }}</title>
-  <meta name="description" content="Dave Bond. Developer">
+  <meta name="description" content="Dave Bond. Developer" />
 </head>
 
 <body>
@@ -16,17 +15,22 @@
     <div id="content" class="row">
       <div id="info" class="span2">
         <h1>
-          <a class="title" href="/">
-            <span class="black">Dave Bond.</span><br />
-            Web Developer
-            </a>
+          <a class="title" href="/"></a>
+          <span class="black">Dave Bond.</span><br />
+          Web Developer
         </h1>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
         <br />
         Founder at <a target="_blank" href="http://www.lexasapp.com/">LexasApp</a><br />
         <a href="mailto:dave@dave-bond.com">dave@dave-bond.com</a>
         <br />
-        <a target="_blank" class="icon twitter" href="http://twitter.com/davidbond007"></a>
-        <a target="_blank" class="icon github" href="http://github.com/davebond"></a>
+        <div style="overflow: auto;">
+          <a target="_blank" class="icon twitter" href="http://twitter.com/davidbond007"></a>
+          <a target="_blank" class="icon github" href="http://github.com/davebond"></a>
+        </div>
       </div>
       <div class="span8">
         {{ content }}
@@ -64,21 +68,21 @@
   
   </script>
   <script type="text/javascript">
-  var GoSquared = {};
-  GoSquared.acct = "GSN-774683-K";
-  (function(w){
-    function gs(){
-      w._gstc_lt = +new Date;
-      var d = document, g = d.createElement("script");
-      g.type = "text/javascript";
-      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
-      var s = d.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(g, s);
-    }
-    w.addEventListener ?
-      w.addEventListener("load", gs, false) :
-      w.attachEvent("onload", gs);
-  })(window);
-</script>
+    var GoSquared = {};
+    GoSquared.acct = "GSN-774683-K";
+    (function(w){
+      function gs(){
+        w._gstc_lt = +new Date;
+        var d = document, g = d.createElement("script");
+        g.type = "text/javascript";
+        g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+        var s = d.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(g, s);
+      }
+      w.addEventListener ?
+        w.addEventListener("load", gs, false) :
+        w.attachEvent("onload", gs);
+    })(window);
+  </script>
 </body>
 </html>
